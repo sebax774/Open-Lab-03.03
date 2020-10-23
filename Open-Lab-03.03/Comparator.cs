@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Open_Lab_03._03
 {
@@ -6,7 +7,10 @@ namespace Open_Lab_03._03
     {
         public bool CompareCharactersCount(string str1, string str2)
         {
-            throw new NotImplementedException();
+            if (str1.Length == str2.Length)
+                return true;
+            else
+                return false;
         }
     }
 }
